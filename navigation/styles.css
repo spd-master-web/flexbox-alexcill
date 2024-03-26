@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgrey;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.navigation {
+  display:flex;
+  justify-content: center;
+
+  padding: .5em;
+
+  min-width: 100vh;
+
+  background-color: #ffc0cb;
+}
+
+.nav-item {
+color: red;
+
+padding: 1em;
+border-right: 1px solid red;
+}
+
+a:nth-child(4) {
+  border-right: none;
+
+}
