@@ -111,6 +111,7 @@ li {
 
   }
 
+  /* ho una serie di dubbi ancora su questo tipo di classe e come funziona */
   .nav-item:first-child {
     border-left: none;
   }
