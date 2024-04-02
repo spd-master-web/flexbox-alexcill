@@ -38,10 +38,6 @@ body {
   border-left: 1px solid red;
 }
 
-/* 
-a:nth-child(4) {
-  border-right: none;
-} */
 
 /* esercizio navigation 2 */
 
@@ -76,11 +72,47 @@ a:nth-child(4) {
 }
 
 .navigation-3 {
-min-width: 50%;
+  min-width: 50%;
 
-display: flex;
-justify-content: center;
-background-color: #ffc0cb;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc0cb;
 
 }
 
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+/* es 2 - mobile */
+
+@media (max-width:960px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .navigation-3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+
+    justify-content: center;
+    padding: 0;
+
+  }
+
+  .nav-item:first-child {
+    border-left: none;
+  }
+
+}
