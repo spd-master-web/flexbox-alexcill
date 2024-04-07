@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #000;
+  background-color: #eee;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.wrapper {
+
+  display: flex;
+  flex-flow: row;
+
+  align-items: baseline;
+
+  max-width: 50%;
+  min-height: 80vh;
+
+  border: .125em dashed #666;
+}
+
+/* es layout  */
+
+nav {
+  width: 20%;
+  min-height: 80vh;
+
+  padding: 1em;
+
+  background-color: lightgrey;
+}
+
+main {
+  width: 60%;
+
+  padding: 1em;
+
+  min-height: 80vh;
+}
+
+aside {
+  width: 20%;
+  min-height: 80vh;
+
+  padding: 1em;
+
+  background-color: lightgrey;
+}
+
+/* es layout 1 */
+
+.margine {
+  margin-top: 3em;
+}
+
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: end;
+
+  padding: 1em;
+  border-radius: 5px;
+
+  background-color: lightgrey;
+
+}
+
+footer p {
+  margin: 0;
+}
+
+
+.layout-2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+/* media queries*/
+
+@media (max-width:960px) {
+  .wrapper {
+
+    display: flex;
+    flex-flow: column;
+
+    max-width: 100%;
+    min-height: 100vh;
+
+    border: .125em solid red;
+  }
+
+
+  main {
+
+    order: 1;
+
+    width: 100%;
+    min-height: auto;
+
+  }
+
+  nav {
+    order: 2;
+
+    width: 100%;
+    min-height: auto;
+  }
+
+  aside {
+    order: 3;
+
+    width: 100%;
+    min-height: auto;
+  }
+
+
+
+}
+
+/* es layout 2*/
+
+.wrapper-2 {
+  display: flex;
+  flex-flow: column;
+
+  align-items: baseline;
+
+  max-width: 50%;
+  min-height: 60vh;
+
+  border: .125em dashed #666;
+}
+
+.second{
+  display: flex;
+  flex-flow: row;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: start;
+
+  font-size: 1.2em;
+
+  padding: .5em;
+  margin-right: auto;
+
+}
+
+.navigation-3 {
+
+  width: 100%;
+
+  padding: 2em;
+
+  display: flex;
+
+  background-color: gainsboro;
+
+}
+
+.nav-item  {
+  padding: .5em;
+
+  border-left:  .125em solid blue;
+}
+
+.nav-2 {
+  min-height: 60vh;
+}
+
+.main-2 {
+  min-height: 60vh;
+}
+
+.aside-2 {
+  min-height: 60vh;
+}
