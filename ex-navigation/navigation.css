@@ -34,13 +34,12 @@ body {
 .nav-item {
   color: red;
 
-  padding: 1em;
+  padding: 1.5em;
   border-left: 1px solid red;
 }
 
 
 /* esercizio navigation 2 */
-
 
 .navigation-2 {
   display: flex;
@@ -58,7 +57,13 @@ body {
   text-align: center;
 }
 
-/* esercizio navigation 2 mobile */
+
+.nav-item:nth-child(1) {
+  border-left: none;
+}
+
+
+/* esercizio navigation 3 */
 
 .logo {
   display: flex;
@@ -86,9 +91,14 @@ ul {
 
 li {
   list-style: none;
+  border-left: 1px solid red;
 }
 
-/* es 2 - mobile */
+li:nth-child(1) {
+  border-left: none;
+}
+
+/* es  - mobile */
 
 @media (max-width:960px) {
   .logo {
@@ -109,11 +119,6 @@ li {
     justify-content: center;
     padding: 0;
 
-  }
-
-  /* ho una serie di dubbi ancora su questo tipo di classe e come funziona */
-  .nav-item:first-child {
-    border-left: none;
   }
 
 }
